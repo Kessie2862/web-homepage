@@ -10,6 +10,13 @@
 	font-family: 'Philosopher';
 }
 
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 h1.title{
 	margin-bottom: 20px;
 	color: #444444;
@@ -45,28 +52,20 @@ p{
 	position: relative;
 }
 
-body{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-}
 .container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 15px;
 }
+
 .header-area {
   background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)),
-  url(https://images.unsplash.com/photo-1528353518104-dbd48bee7bc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80);
+  url(https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
   background-position: center center;
   background-size: cover;
 }
-/* default css end */
 
-
-/* navbar regular css start */
 .navbar-area {
   background: rgba(0,0,0,.6);
   border-bottom: 1px solid #000;
@@ -99,10 +98,7 @@ a.site-logo {
 .site-navbar ul li a:hover {
   background: rgba(255,255,255,.1);
 }
-/* navbar regular css end */
 
-
-/* nav-toggler css start */
 .nav-toggler {
   border: 3px solid #fff;
   padding: 5px;
@@ -137,10 +133,7 @@ a.site-logo {
 .nav-toggler.toggler-open span:after {
   transform: translateY(-3px) rotate(-45deg);
 }
-/* nav-toggler css start */
 
-
-/* intro-area css start */
 .intro-area {
   height: calc(100vh - 61px);
   display: flex;
@@ -157,15 +150,14 @@ a.site-logo {
 .intro-area p {
   font-size: 18px;
 }
-/* intro-area css end */
 
-
+/* media queries */
 /* mobile breakpoint start */
 @media screen and (max-width: 767px) {
   .container {
     max-width: 720px;
   }
-  /* navbar css for mobile start */
+
   .nav-toggler{
     display: block;
   }
@@ -204,9 +196,7 @@ a.site-logo {
     font-size: 36px;
     margin-bottom: 15px;
   }  
-  /* navbar css for mobile end */
 }
-/* mobile breakpoint end */
 
 /* About */
 .about,
@@ -313,28 +303,3 @@ a.site-logo {
 
 
 
-@media (max-width: 720px){
-
-	.navbar{
-		height: auto;
-		flex-direction: column;
-	}
-
-	.logo{
-		margin-bottom: 25px;
-	}
-
-	.navbar_items ul{
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.navbar_items ul li{
-		margin-bottom:5px;
-	}
-
-	.banner_content{
-		margin-top: 35px;
-	}
-
-}
