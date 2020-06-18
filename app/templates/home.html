@@ -1,0 +1,82 @@
+{% extends "layout.html" %} {% include "includes/navbar.html" %}
+{% block content %}
+<br>
+<br>
+<div class="about" id="about">
+    <h1 class="title">About Us</h1>
+    <p>We are one of the country's top digital and design agencies. We're a culture of dreamers and doers who prove that
+        the two aren't mutually exclusive. We're known for challenging the way digital stories are told and our
+        customers satisfaction is our main priority. </p>
+    <div class="btn"><a href="#">Learn More</a></div>
+</div>
+
+
+<div class="services" id="services">
+    <h1 class="title">our Services</h1>
+    <p></p>
+    <div class="diff_services">
+        <div class="diff_services_item">
+            <img src="{{url_for('static', filename='images/services-3.jpg')}}" alt="service_image">
+            <h4 class="sub_title">Branding</h4>
+            <p>Naming, Brand Creation, Brand Management, Logo Development, Brand Collateral.</p>
+        </div>
+        <div class="diff_services_item">
+            <img src="{{url_for('static', filename='images/services-2.jpg')}}" alt="service_image">
+            <h4 class="sub_title">Digital</h4>
+            <p>Website Design & Development, Mobile App Development, E-Commerce.</p>
+        </div>
+        <div class="diff_services_item">
+            <img src="{{url_for('static', filename='images/services-1.jpeg')}}" alt="service_image">
+            <h4 class="sub_title">Print</h4>
+            <p>Packaging Design, Brochures & Posters, Brand Analysis, Photography, Web Analytics.
+        </div>
+    </div>
+</div>
+
+<div class="contactus" id="contactus">
+    <h1 class="title">contact us</h1>
+    <div class="form_wrapper">
+        <div class="form_input">
+            <input type="text" placeholder="Email">
+        </div>
+        <div class="form_input">
+            <input type="text" placeholder="Subject">
+        </div>
+        <div class="form_input">
+            <textarea placeholder="Message"></textarea>
+        </div>
+        <div class="btn">
+            <a href="#">Submit</a>
+        </div>
+    </div>
+</div>
+
+<div class="ourteam" id="ourteam">
+    <h1 class="title">our team</h1>
+    <div class="ourteam_wrapper">
+        <div class="team-1 team">
+            <div class="team_members" data-name="Prosper Kessie"><img
+                    src="{{url_for('static', filename='images/team-1.jpg')}}" alt=" Team_Images"></div>
+            <div class="team_members" data-name="Jones"><img src="{{url_for('static', filename='images/team-2.png')}}"
+                    alt="Team_Images"></div>
+            <div class="team_members" data-name="Man-in-suit"><img
+                    src="{{url_for('static', filename='images/team-5.jpeg')}}" alt="Team_Images"></div>
+        </div>
+        <div class="team-2 team">
+            <div class="team_members" data-name="Man-in-suit"><img
+                    src="{{url_for('static', filename='images/team-4.jpeg')}}" alt="Team_Images">
+            </div>
+            <div class="team_members" data-name="Woman-in-suit"><img
+                    src="{{url_for('static', filename='images/team-3.jpeg')}}" alt="Team_Images"></div>
+            <div class="team_members" data-name="Lady standing"><img
+                    src="{{url_for('static', filename='images/team-6.jpeg')}}" alt="Team_Images"></div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <a href="#">© 2020 DREAMER</a>
+</div>
+
+</div>
+{% endblock content %}
